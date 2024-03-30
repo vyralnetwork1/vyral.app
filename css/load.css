@@ -1,0 +1,170 @@
+
+@keyframes flowLoader {
+    0%   {transform: rotate(0deg);}
+    5%   {transform: rotate(5deg);}
+    10%  {transform: rotate(10deg);}
+    15%  {transform: rotate(15deg);}
+    20%  {transform: rotate(20deg);}
+    25%  {transform: rotate(25deg);}
+    30%  {transform: rotate(30deg);}
+    35%  {transform: rotate(35deg);}
+    40%  {transform: rotate(40deg);}
+    45%  {transform: rotate(45deg);}
+    50%  {transform: rotate(50deg);}
+    55%  {transform: rotate(45deg);}
+    60%  {transform: rotate(40deg);}
+    65%  {transform: rotate(35deg);}
+    70%  {transform: rotate(30deg);}
+    75%  {transform: rotate(25deg);}
+    80%  {transform: rotate(20deg);}
+    85%  {transform: rotate(15deg);}
+    90%  {transform: rotate(10deg);}
+    95%  {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#flowLoader, #flowLoader2, #flowLoader3, #flowLoader4, #flowLoader6, #flowLoader-adc-usrs, #flowLoader-adc-auths, #flowLoader-srch-tag, #flowLoader-top, .flowLoader {
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:20px;
+    animation-name: flowLoader;
+    animation-duration: 0.65s;
+    animation-iteration-count: infinite;
+}
+
+.chtLodIc {
+    animation-name: flowLoader;
+    animation-duration: 0.65s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes refresher {
+    0%   {transform: rotate(0deg);}
+    10%  {transform: rotate(-10deg);}
+    15%  {transform: rotate(-25deg);}
+    20%  {transform: rotate(-40deg);}
+    25%  {transform: rotate(-65deg);}
+    30%  {transform: rotate(-80deg);}
+    35%  {transform: rotate(-105deg);}
+    40%  {transform: rotate(-120deg);}
+    45%  {transform: rotate(-145deg);}
+    50%  {transform: rotate(-140deg);}
+    55%  {transform: rotate(-165deg);}
+    60%  {transform: rotate(-180deg);}
+    65%  {transform: rotate(-205deg);}
+    70%  {transform: rotate(-220deg);}
+    75%  {transform: rotate(-245deg);}
+    80%  {transform: rotate(-260deg);}
+    85%  {transform: rotate(-285deg);}
+    90%  {transform: rotate(-305deg);}
+    95%  {transform: rotate(-320deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+.rfrshMain {
+    animation-name: refresher;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logUp {
+    0%   {margin-top: 98%;}
+    10%  {margin-top: 96%}
+    15%  {margin-top: 94%;}
+    20%  {margin-top: 92%;}
+    25%  {margin-top: 90%;}
+    30%  {margin-top: 88%;}
+    35%  {margin-top: 86%;}
+    40%  {margin-top: 84%;}
+    45%  {margin-top: 82%;}
+    50%  {margin-top: 80%;}
+    55%  {margin-top: 78%;}
+    60%  {margin-top: 76%;}
+    65%  {margin-top: 74%;}
+    70%  {margin-top: 72%;}
+    75%  {margin-top: 70%;}
+    80%  {margin-top: 68%;}
+    85%  {margin-top: 66%;}
+    90%  {margin-top: 64%;}
+    95%  {margin-top: 62%;}
+    100% {margin-top: 60%;}
+}
+
+.logOpnImg {
+    animation-name: logUp;
+    animation-duration: 0.95s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rru {
+    0%  {margin-bottom: 65px;}
+    10%  {margin-bottom: 70px;}
+    15%  {margin-bottom: 75px;}
+    30%  {margin-bottom: 80px;}
+    35%  {margin-bottom: 85px;}
+    40%  {margin-bottom: 90px;}
+    50%  {margin-bottom: 95px;}
+    60%  {margin-bottom: 100px;}
+    70%  {margin-bottom: 105px;}
+    80%  {margin-bottom: 110px;}
+    90%  {margin-bottom: 115px;}
+    95%  {margin-bottom: 120px;}
+    100%   {margin-bottom: 125px;}
+}
+
+.refreshRU {
+    animation-name: rru;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    margin-bottom: 125px;
+}
+
+@keyframes rrd {
+    0%   {margin-bottom: 120px;}
+    10%  {margin-bottom: 115px;}
+    15%  {margin-bottom: 110px;}
+    20%  {margin-bottom: 105px;}
+    25%  {margin-bottom: 100px;}
+    30%  {margin-bottom: 95px;}
+    40%  {margin-bottom: 90px;}
+    50%  {margin-bottom: 85px;}
+    60%  {margin-bottom: 80px;}
+    70%  {margin-bottom: 75px;}
+    80%  {margin-bottom: 70px;}
+    90%  {margin-bottom: 65px;}
+    100%  {margin-bottom: 60px;}
+}
+
+.refreshRD {
+    animation-name: rrd;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    margin-bottom: 60px;
+}
+
+@keyframes icosa {
+    0%   {background-image: url(.././assets/imgs/loader1.png);}
+    10%  {background-image: url(.././assets/imgs/loader2.png);}
+    15%  {background-image: url(.././assets/imgs/loader3.png);}
+    20%  {background-image: url(.././assets/imgs/loader4.png);}
+    30%  {background-image: url(.././assets/imgs/loader5.png);}
+    35%  {background-image: url(.././assets/imgs/loader6.png);}
+    40%  {background-image: url(.././assets/imgs/loader7.png);}
+    50%  {background-image: url(.././assets/imgs/loader8.png);}
+    55%  {background-image: url(.././assets/imgs/loader9.png);}
+    60%  {background-image: url(.././assets/imgs/loader8.png);}
+    70%  {background-image: url(.././assets/imgs/loader7.png);}
+    75%  {background-image: url(.././assets/imgs/loader6.png);}
+    80%  {background-image: url(.././assets/imgs/loader5.png);}
+    90%  {background-image: url(.././assets/imgs/loader4.png);}
+    95%  {background-image: url(.././assets/imgs/loader3.png);}
+    100%  {background-image: url(.././assets/imgs/loader2.png);}
+}
+
+.icosaLoader {
+    background-image: url(.././assets/imgs/loader1.png);
+    background-size: 100% 100%;
+    animation-name: icosa;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>vyral first mobile test</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script> -->
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/load.css" rel="stylesheet">
+    <link href="css/imgedits.css" rel="stylesheet">
+    <link href="css/chats.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+
+
+      <!-- *** SCRIPTS TO INCLUDE ***
+      _________________________________________________________ -->
+      <script src="js/jquery-3.7.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/bootstrap-hover-dropdown.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/front.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="assets/icon/log2.png" />
+    <!-- <link rel="manifest" href="/manifest.json" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="theme-color" content="#31d53d" />
+
+    <link rel="icon" type="image/x-icon" href="assets/log2.d77c0b49.png" />
+    <!-- <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkFwcCIsCiAgInNob3J0X25hbWUiOiAiQXBwIiwKICAic3RhcnRfdXJsIjogImluZGV4Lmh0bWwiLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJpY29ucyI6IFt7CiAgICAic3JjIjogImFzc2V0cy9pbWdzL2xvZzIucG5nIiwKICAgICJzaXplcyI6ICI1MDB4NTAwIiwKICAgICJ0eXBlIjogImltYWdlL3BuZyIKICB9XSwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMzFkNTNkIiwKICAidGhlbWVfY29sb3IiOiAiIzMxZDUzZCIKfQo=" /> -->
+    
+    <!-- <script type="module" crossorigin src="assets/index.d350b8ff.js"></script> -->
+    <!--link rel="stylesheet" href="assets/index.83d86499.css">-->
+    <style>
+        button, .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #404040;
+        }
+    </style>
+  </head>
+    
+  <body id="Wholebody" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #404040;">
+        
+    <div class="container-fluid" id="container-off">
+        <div class="row" style="height:100%; position: fixed;"></div>
+    </div>
+
+    <div class="container-fluid" id="container-pops">
+        <span id="dropChat"></span>
+    </div>
+
+    <span id="drp-rev-hr"></span>
+
+    <div class="container-fluid all_cons" id="container-wlcm-logs">
+        <div class="row">
+            <!-- welcome_back -->
+            <div class="col-xs-12 all_childs" id="wlcm_con" style="position: fixed; z-index: 2; height: 100%; background-color: white; display: none;">
+              <div class="row" style="height: 100%;">
+                  <div class="col-xs-12" loading="eager" style="height: 87.5%; background-image: url(assets/imgs/jazback1.jpg); background-size:100% 100%; box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.45);">
+                      <div id="logOpnImg" loading="eager" class="" style="width: 100px; height: 100px; margin: auto; margin-top: 60%; background-image: url(assets/imgs/log2.png); background-size: 100% 100%; display: none;"></div>
+                  </div>
+              </div>
+          </div>
+            <!-- log-in -->
+            <div class="col-xs-12 all_childs" id="log_con" style="position: fixed; z-index: 2; height: 100%; background-color: #f9f9f9; display: none;">
+                <div class="row" style="height: 100%;">
+                    <br>
+                    <div style="width: 90%; margin: auto; background-color: white; margin-top: 50px; border: solid 1px #f0f0f0; border-radius: 5px;" id="logIn_con">
+                        <p style="margin: 0px; padding: 5px; font-size: 13px; color: silver;">login</p>
+                        <hr style="margin: 5px; width: 95%;">
+                        <span id="drop_logs_Comp"></span>
+                        <div style="width: 85%; margin: auto;">
+                            <input maxlength="30" type="text" name="" id="u_name_in" class="nmi_ins" placeholder="username" onkeypress="clsAlphaNoOnly(event)" onpaste="return false;">
+                            <input type="password" name="" id="ps_in" class="nmi_ins" placeholder="password" onkeypress="clsAlphaNoOnly(event)" onpaste="return false;">
+                        </div>
+                        <p style="text-align: center; margin: 5px; padding: 5px;">
+                            <button class="btn btn-default btn-sm" id="login_subm" style="background-color: transparent; border: solid 1px #f0f0f0; border-radius: 15px;">login</button>
+                        </p>
+                        <p id="log_frgt" style="color: silver; font-size: 16.5px; margin: 0px; padding: 5px; text-align: center;">forgot password</p>
+                        <hr style="margin: 5px; width: 95%;">
+                        <p style="text-align: center; color: grey; margin: 0px; padding: 5px;"> Don't have an account? <span class="opn_reg" style="color: darkorange;">Signup!</span> </p>
+                    </div>
+                    <div id="noLogCons" class="forLogins" style="width:90%; margin:auto; border-radius:5px; background-color:white; margin-top:15px; box-shadow:0px 0px 20px -10px #1a1a1a; display:none;">
+                        <p style="margin:0px; padding:5px; color:grey; text-align:center;">You have included wrong combinations in multiple attempts. Wait until the service has issues you new validations</p>
+                        <div style="width:110px; height:125px; margin:auto; padding:10px;">
+                            <img src="assets/imgs/lock.png" width="100%" height="100%">
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- forgot p -->
+            <div class="col-xs-12 all_childs" id="frg_con" style="position: fixed; z-index: 2; height: 100%; background-color: #f9f9f9; display: none;">
+                <!-- fg pass -->
+                <span id="drop_fpass_Comp"></span>
+                <div class="col-xs-12" id="fgpassBod" style="margin-top:10px;">
+                    <br>
+                    <div style="width: 98%; background-color: white; border-radius:7px; box-shadow: 0px 0px 20px -5px #dddddd;">
+                        <br>
+                        <p style="text-align:center; color:grey; margin:5px; font-size:14px;">Remembered your password? <span class="opn_log_fg" style="text-decoration:none; color:grey; font-weight: normal;">Login!</span></p>
+                        <hr style="margin:5px;">
+                        <p style="color:#1a1a1a; text-align: center; font-size: 13px; margin:5px;" id="globeStat"></p>
+                        <p style="margin:5px; text-align: center;">
+                            <img src="assets/imgs/lock.png" alt="" width="50px" height="50px" id="curStatus">
+                        </p>
+                        <br>
+                    </div>
+                    <br>
+                    <div style="width: 98%; background-color: white; border-radius:7px; box-shadow: 0px 0px 20px -5px #dddddd;">
+                        <br>
+                        <p style="margin: 0px; padding: 5px; color: grey; font-size: 14px;">But first, let's authenticate your account with a few steps!</p>
+                        <!-- step one - QA-AUTHENTICATION -->
+                        <div id="stepOne" style="width: 95%; margin: auto; border:solid 1px #f9f9f9; margin-bottom: 5px; border-radius: 5px;">
+                            
+                            <p style="text-align: center; margin: 5px; color: silver; font-size: 13px;">step <i style="font-size: 15px; color: darkorange;">1</i> </p>
+                            <p style="color:silver; text-align: center; font-size: 14px;">Write answer to the question you asigned to verify your account</p>
+                            <p style="margin: 0px; padding: 5px; color:silver; font-size: 14px;"> Question - <i style="color: darkorange; font-size: 13px;" id="questFGPqa"></i> </p>
+                            <input id="inAnswer" type="text" placeholder="answer" style="width:90%; margin: 5px; border: none; background-color: transparent; border-bottom: solid 1px orange;">
+                            <p style="text-align: center; margin: 5px;">
+                                <button id="subQst" class="btn btn-default btn-xs" style="background-color: transparent; border: solid 1px #f0f0f0; border-radius: 10px;">submit</button>
+                            </p>
+
+                            <br>
+                        </div>
+                        <!-- step two - CODE VERIFICATION -->
+                        <div id="stepTwo" style="width: 95%; margin: auto; border:solid 1px #f9f9f9; margin-bottom: 5px; border-radius: 5px; display: none;">
+                            
+                            <p style="text-align: center; margin: 5px; color: silver; font-size: 13px;">step <i style="font-size: 15px; color: darkorange;">2</i> </p>
+                            <p style="color:silver; text-align: center; font-size: 14px;">Send verification code so we can verify your email</p>
+                            <p style="margin: 0px; padding: 5px; font-size: 14px; text-align: center;">
+                                <button id="sendVer" class="btn btn-default btn-xs" style="background-color: transparent; border: solid 1px #f0f0f0; border-radius: 10px;">send code</button>
+                                <span id="verTimerFGP" style="display: none; color: darkorange; font-size: 25px;"></span>
+                                <span id="tElapse" style="color:orangered; display: none; font-size: 13px;">TIME EXPIRED!</span>
+                                <br>
+                                <button id="resendVer" class="btn btn-default btn-xs" style="background-color: transparent; border: solid 1px #f0f0f0; border-radius: 10px; display: none;">resend code</button>
+                            </p>
+                            <p style="text-align: center; margin:5px;">
+                                <input id="codeIn" type="text" placeholder="000000" style="width:50%; text-align: center; border: none; background-color: transparent; border-bottom: solid 1px orange;">
+                            </p>
+                            <p style="text-align: center; margin: 5px;">
+                                <button id="subCodeFGP" class="btn btn-default btn-xs" style="background-color: transparent; border: solid 1px #f0f0f0; border-radius: 10px; display: none;">submit</button>
+                            </p>
+
+                            <br>
+                        </div>
+                        <!-- step three - NEW PASSWORD -->
+                        <div id="stepThr" style="width: 95%; margin: auto; border:solid 1px #f9f9f9; margin-bottom: 5px; border-radius: 5px; display: none;">
+                            
+                            <p style="text-align: center; margin: 5px; color: silver; font-size: 13px;">step <i style="font-size: 15px; color: darkorange;">3</i> </p>
+                            <p style="color:silver; text-align: center; font-size: 14px;">Create new password</p>
+                            <p style="text-align: center;">
+                                <input id="passOne" type="password" placeholder="write new password" style="width:80%; margin: 5px; text-align: center; border: none; background-color: transparent; border-bottom: solid 1px #f0f0f0;">
+                                <input id="passTwo" type="password" placeholder="confirm password" style="width:80%; margin: 5px; text-align: center; border: none; background-color: transparent; border-bottom: solid 1px #f0f0f0;">
+                            </p>
+                            <p style="text-align: center; margin: 5px;">
+                                <button id="submitPwd" class="btn btn-default btn-xs" style="background-color: transparent; border: solid 1px #f0f0f0; border-radius: 10px; display: none;">submit</button>
+                            </p>
+
+                            <br>
+                        </div>
+
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <!-- register page -->
+            <div class="col-xs-12 all_childs" id="sign_con" style="position: fixed; z-index: 2; height: 100%; display: none;">
+                <div class="row" style="height: 100%;">
+                    <div class="col-xs-12" style="height: 87.5%; background-image: url(assets/imgs/promos16.png); background-size: 100% 100%;">
+                        <div style="height: 35%; width: 100%;">
+                            <p style="text-align: center; color: white; margin: 0px; margin-top: 10px; padding: 5px; text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.621); font-weight: bold;"> Already have an account? <span class="opn_log" style="color: white; font-weight: bolder;">login!</span> <span class="opn_tut" style="color: white; font-weight: bolder; display: none;">tutorials</span> </p>
+                        </div>
+                        <div style="height: 65%; width: 100%;">
+
+                            <!-- new name + mail check -->
+                            <div style="width: 90%; margin: auto; background-color: white; margin-top: 5px; border-radius: 5px;" id="ver-info-div">
+                                <form id="form-mailv">
+                                    <p style="margin: 0px; padding: 5px; font-size: 13px; color: silver; text-align: center;">validate username & verify email</p>
+                                    <hr style="margin: 5px; width: 95%;">
+                                    <div style="width: 85%; margin: auto;">
+                                        <input type="text" name="" maxlength="30" id="u_name_in_v" class="nmi_ins" placeholder="username" onkeypress="clsAlphaNoOnly(event)" onpaste="return false;">
+                                        <input type="email" name="" id="mail_in_v" class="nmi_ins" placeholder="email">
+                                    </div>
+                                    <p id="ver-mail-no" style="color: orangered; font-size: 10px; margin:5px; text-align: center; display:none;">This email is already attributed to another user!</p>
+                                    <p id="dontWhover-mail-no" style="color: orangered; font-size: 10px; margin:5px; text-align: center; display:none;">This email cannot be assigned to an account for security reasons</p>
+                                    <p style="text-align: center; margin: 5px; padding: 5px;">
+                                        <button class="btn btn-default btn-sm" style="background-color: transparent; border: solid 1px #f0f0f0; border-radius: 15px; display: none;" id="submit-mailVer">verify email</button>
+                                    </p>
+                                    <br>
+                                </form>
+                            </div>
+                            <!-- ver mail con -->
+                            <div id="verinfo-timer-div" style="width: 90%; margin: auto; background-color: white; margin-top: 5px; border-radius: 5px; display:none;">
+                                <p style="text-align:center; margin:5px; color:grey; font-size:13px;"> A verification code was sent to <span id="sentTo"></span> </p>
+                                <p style="text-align:center; font-size:25px; margin:7.5px; font-weight: normal;" id="verTimer"></p>
+                                <p style="text-align: center; margin: 5px; color:silver; font-size: 10px;">Insert the verfication code sent your email in the input below</p>
+                                <p style="text-align: center; margin: 2.5px; color:silver; font-size: 8px;"> <i>(Do not reload or close tab!)</i> </p>
+                                <p style="margin: 5px; text-align: center;">
+                                    <input type="text" name="" id="mail-ver-in" style="text-align: center; border: none; border-bottom:solid 1px #dddddd; height: 40px;" placeholder="000000">
+                                    <br>
+                                    <button id="submitVerCode" class="btn btn-default btn-xs" style="margin: 5px; background-color: transparent; border: solid 1px #f0f0f0; border-radius: 15px;">submit</button>
+                                </p>
+                                <p style="text-align: center; margin: 0px; padding: 5px; color: orangered; font-size: 11px; display: none;" id="attmptsP"> You have <strong id="attmptsMailVer"></strong> more attempts </p>
+                                <br>
+                            </div>
+                            <!-- donmail div -->
+                            <div id="dontMail-div" style="width: 90%; margin: auto; background-color: white; margin-top: 5px; border-radius: 5px; display: none;">
+                                <br>
+                                <p style="text-align: center; margin:0px; margin-top: 10px; padding:5px; color:grey; font-size: 13px;">You have no valid access to the email you inserted on this platform today.</p>
+                                <p style="text-align: center; margin:0px; padding:5px; color:grey; font-size: 13px;">Try again some other time.</p>
+                                <div style="height:50px; width:50px; margin:auto;">
+                                    <img src="assets/imgs/lock.png" alt="" width="100%" height="100%">
+                                </div>
+                                <p style="text-align: center; margin: 5px;">
+                                    <button id="reInsEmail" class="btn btn-default btn-xs" style="margin: 5px;">insert another email</button>
+                                </p>
+                                <br>
+                            </div>
+                            <!-- complete the rest -->
+                            <div id="form-bg" style="width: 97.5%; height: 370px; overflow-y: auto; margin: auto; background-color: white; margin-top: 5px; border-radius: 5px; display: none;">
+                                <form id="form-bgmain">
+                                    <div class="" style="width:100%; border-bottom:solid 1px #f0f0f0;">
+                                    <br>
+                                    <div class="" style="width:95%; margin:10px;">
+                                        <input type="text" name="at" id="at" value="@" style="width:10%; margin:5px; border:none; color:skyblue; text-align:center; display:none;" readonly>
+                                        <input maxlength="30" id="user-bg" required type="text" name="uname" value="" placeholder="username" style="width:80%; height:28px; border-right:none; border-left:none; border-top:none; border-bottom:solid 1px #dddddd; opacity: 0.6;">
+                                        <br><br>
+                                        <input id="mail" required type="email" name="inputemail" value="" placeholder="email" style="width:80%; height:28px; border-right:none; border-left:none; border-top:none; border-bottom:solid 1px #dddddd; opacity: 0.6;">
+                                        <br><br>
+                                        <input maxlength="10" id="pwd-bgt" required type="password" onkeypress="clsAlphaNoOnly(event)" onpaste="false;" name="inputpassword" value="" placeholder="password" style="width:80%; height:28px; border-right:none; border-left:none; border-top:none; border-bottom:solid 1px #dddddd;">
+                                        <br><br>
+                                        <input maxlength="10" id="pwd-bg" required type="password" onkeypress="clsAlphaNoOnly(event)" onpaste="false;" name="confirmpassword" value="" placeholder="confirm password" style="width:80%; height:28px; border-right:none; border-left:none; border-top:none; border-bottom:solid 1px #dddddd;">
+                                        <button class="btn btn-default btn-xs" style="display:none; margin: 5px;" id="openqa">Q/A</button>
+                                        <div id="qabod" style="height:200px; width:100%; background-color:#f9f9f9; margin-top:10px; border-radius:5px; display:none;">
+                                            <p id="cqabod" style="text-align: center; margin: 0px; padding:5px; cursor: pointer;">
+                                                <img src="assets/imgs/up.png" width="22.5px" height="13px" alt="">
+                                            </p>
+                                            <p style="margin:5px; color:gery; font-size:13px;">Insert question and answer incase you forget your password in the future. <strong style="font-size:10px; color:silver;">(<strong style="color:grey;">Q:</strong> What is my pet's name? <strong style="color:grey;">A:</strong> Hank.)</strong> <i style="color:silver;">(not required)</i> </p>
+                                            <textarea name="question" id="quest" placeholder="Question" style="margin:5px; width:70%; height:40px; border:solid 1px #f0f0f0; border-radius:5px;"></textarea>
+                                            <input id="ans" placeholder="Answer" type="text" style="width:60%; height:20px; background-color:#f9f9f9; border:none; border-bottom:solid 1px orange; margin:5px;">
+                                        </div>
+                                        <br>
+                                        <select id="pht" style="margin:5px;">
+                                        <option>+234</option>
+                                        <option>+235</option>
+                                        <option>+44</option>
+                                        <option>+255</option>
+                                    </select><input id="phone" type="number" name="phone" value="" placeholder="phone number" required style="width:70%; height:28px; border-right:none; border-left:none; border-top:none; border-bottom:solid 1px #dddddd;">
+                                        <br><br>
+                                        <p style="margin:5px; color:silver;">Date of birth:</p>
+                                        <select name="" id="yrid" style="margin:1%; width:20%; border:solid 1px #dddddd; border-radius:5px;"></select>
+                                        <select id="mntid" style="margin:1%; width:30%; border:solid 1px #dddddd; border-radius:5px;">
+                                            <option>January</option>
+                                            <option>Febuary</option>
+                                            <option>March</option>
+                                            <option>April</option>
+                                            <option>May</option>
+                                            <option>June</option>
+                                            <option>July</option>
+                                            <option>August</option>
+                                            <option>September</option>
+                                            <option>October</option>
+                                            <option>November</option>
+                                            <option>December</option>
+                                        </select>                            
+                                        <select name="" id="dayid" style="margin:1%; width:15%; border:solid 1px #dddddd; border-radius:5px;"></select>
+                                        <br>
+                                        <p style="margin:5px; color:silver;">Country:</p>
+                                        <select id="lclid" style="margin:1%; width:30%; border:solid 1px #dddddd; border-radius:5px;">
+                                        </select>    
+                                        <br>
+                                        <p style="margin:5px; color:silver;">Gender:</p>
+                                        <select id="sexid" style="margin:1%; width:30%; border:solid 1px #dddddd; border-radius:5px;">
+                                            <option>male</option>
+                                            <option>female</option>
+                                        </select> 
+                                    </div>
+                                    </div>
+                                    <button id="doneAll" type="sbumit" name="" value="submit" class="btn btn-warning btn-sm" style="border-radius:15px; display:none;">submit</button>
+                                </form>
+                                <div style="width:100%;">
+                                    <br>
+                                    <p style="text-align:center; margin-top:-10px;">
+                                        <button id="gotoTerms" name="" value="" class="btn btn-warning btn-sm" style="border-radius:15px;">next</button>
+                                    </p>
+                                    <p id="error_reg_c" style="color: orangered; font-size: 12px; text-align: center; margin: 5px;"></p>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <!-- terms and conditions -->
+                            <div id="tandCond" style="width: 100%; height: 330px; display: none;">
+
+                                <div style="width: 100%; height: 300px; width: 95%; margin:auto; margin-top:5px; background-color:white; border-radius: 5px; overflow-y:auto; box-shadow:0px 0px 10px -1px #0000004f;">
+                                <p class="perfHd" style="margin: 5px; padding: 5px;">Terms and conditions</p>
+                                <p class="perfExp" style="margin: 0px; padding: 3px;">The information bellow is a legal agreement every user must agree to before using our platform.</p>
+                                <p class="perfExp" style="margin: 0px; padding: 3px;">These specify regulations applied between every user and the general vyral community. Both parties are to commit to the stated regulations. Any party that oppose these regulations has broken this agreement which may reach out to face legal punishment that my be assigned to breaking any of the stated information.</p>
+                                <hr style="margin: 10px;">
+                                <div class="imp">
+                                    <p class="perfExp" style="margin: 0px; padding: 3px;"> <span style="font-size: 18px;">Terms every user must agree to:</span> </p>
+                                    <hr style="width: 90%; margin: 5px;">
+                                    <ul>
+                                        <p style="font-size: 13px;"> - Every potential user may agree to signup the needed details that are generally requested from this platform.</p>
+                                        <p style="font-size: 13px;"> - Users must accept news and information posted by our BigJournal content creators and journalists. vyral is not a political platform. So, any news or information placed on this platform is not of any bias intention nor political interests.</p>
+                                        <p style="font-size: 13px;"> - Every user must agree to our <a href="/community" style="text-decoration: none;"><span style="color: skyblue; cursor: pointer;" id="goToComm">Community Guidelines</span></a>, by avoiding sharing of abusive, harassing or inappropriate  contents & messages. Multiple related reports regarding a user or post or messages of any kind might result to suspending the account or deletion to the ill-related post.</p>
+                                        <p style="font-size: 13px;"> - A user must comply to the usage of their location to apply for feed post categorizations. Regarding the Journals created by our content creators or posts from people regarding that region</p>
+                                        <p style="font-size: 13px;"> - User must agree to the allocation of his/her personal data given to Security Officials if any user is a suspect that is related to any form of criminal activity. Even though vyral is a free internet product, we shall not be a tool to any criminal or fraudulent activity.</p>
+                                    </ul>
+                                </div>
+                                <hr style="margin: 10px;">
+                                <div class="imp">
+                                    <p class="perfExp" style="margin: 0px; padding: 3px;"> <span style="font-size: 18px;">We agree to comply to:</span> </p>
+                                    <hr style="width: 90%; margin: 5px;">
+                                    <ul>
+                                        <p style="font-size: 13px;"> - Be a free and fair platform; where all users may share their thoughts and experiences so long as it does not discriminate nor go against our <a href="/community" style="text-decoration: none;"><span style="color: skyblue; cursor: pointer;" id="goToComm">Community Guidelines</span></a>.</p>
+                                        <p style="font-size: 13px;"> - To not use, refurbish or publicly share any user's personal information. Unless upon requested.</p>
+                                        <p style="font-size: 13px;"> - To commute to be informed and noted to any type of complain or review that is reported by any user. And will put as much effort to take action.</p>
+                                        <p style="font-size: 13px;"> - To take down or result in punishing any content or content creator who's post is perceived  as bias or abusive to the community.</p>
+                                    </ul>
+                                </div>
+                                <p style="color: grey; font-size: 13px; margin:0px; padding: 5px;">Read our <a href="/community" style="text-decoration: none;"><span style="color: skyblue;">Data Policy & Community Guidelines</span></a> for more information.</p>
+                                <br>
+                                </div>
+                                <br>
+                                <div style="width: 100%; height: 40px; width: 100%; margin:auto; margin-top:5px;">
+                                <p style="text-align: center;"><button id="agreeSubmit" class="btn btn-info btn-sm" style="border-radius: 15px;">I agree</button></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tutorials -->
+            <div class="col-xs-12 all_childs" id="tut_con" style="position: fixed; z-index: 2; height: 100%; display: none;">
+                <div class="row" style="height: 100%;">
+                    <div class="col-xs-12" style="height: 80%; background-image: url(assets/imgs/cbsm.png); background-size: 100% 100%;">
+
+                        <div id="tutorial_bod" style="width:100%; height: 550px;">
+                            <br>
+
+                            <div style="width: 40px; height: 40px; margin-top: 10px; background-color: white; border-radius: 100%; box-shadow: 0px 0px 20px -10px #1a1a1a; margin: auto;">
+                            <p style="padding: 7.5px; margin: 0px; color: darkorange; font-size: 18px; text-align: center;" id="statnum"></p>
+                            </div>
+                
+                            <div style="width: 100%; height: 450px; margin-top: 20px; border-radius: 7.5px; background-color: #f9f9f9; box-shadow: 0px 0px 20px -10px #1a1a1a;">
+                            <p id="stat" style="margin:0px; padding: 5px; color: darkorange; font-size: 15px; text-align: center;"></p>
+                            <div style="width: 95%; height: 350px; background-color: white; border-radius: 5px; margin: auto; overflow-y: auto;">
+                                
+                                <!-- tutorial one: journal -->
+                                <span id="tut1" class="tuts" style="display: none;">
+                                    <br>
+                                    <div style="width: 60px; height: 60px; border-radius: 100%; margin: auto;">
+                                        <img src="assets/imgs/read.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>Journals</strong> are threads of information posted by our journalists, sourced from the most reliable publishers on the internet and other trusted sources. These <strong>Journals</strong> can also be posted by you or your friends, which can occupy pictures or a video and bodies as text to express your experiences to friends and family. You can interact to these <strong>Journals</strong> by commenting, liking or even sharing them to your friends. And you can also tag your friends and family to a <strong>Journal</strong>.</p>
+                                    <div style="width: 60px; height: 60px; border-radius: 100%; margin: auto;">
+                                        <img src="assets/imgs/bread.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;">Find authors on our platform that may upload <strong>Books</strong> of your favorite genre or categories.</p>
+                                    <br>
+                                </span>
+                
+                                <!-- tutorial two: categories and sub-navs -->
+                                <span id="tut2" class="tuts" style="display: none;">
+                                    <br>
+                                    <div style="width: 60px; height: 60px; border-radius: 100%; margin: auto;">
+                                        <img src="assets/imgs/newlog.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- categories</strong> are displayed on the navigation panel where you can differentiate the Journals posted by our sources. But the Journals posted by your friends and families will be excluded when you are not on the <strong>Home</strong> page. So click the <strong>Home</strong> button when you want to get the general Feed.</p>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- Sub-Navigations</strong> are aligned on the <strong>Home</strong> page where you can explore, or check the most relevant items that are shopped on the internet.</p>
+                                    <div style="width: 60px; height: 60px; border-radius: 100%; margin: auto;">
+                                        <img src="assets/imgs/locate.png" alt="" width="24px" height="38px" style="margin: 20px; margin-left: 23px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- Locations</strong> are used to categorize the information on the page, which is generally included by your country and continent.</p>
+                                    <br>
+                                </span>
+                
+                                <!-- tutorial three: Str && thr -->
+                                <span id="tut3" class="tuts" style="display: none;">
+                                    <br>
+                                    <div style="width: 60px; height: 60px; border-radius: 100%; margin: auto;">
+                                        <img src="assets/imgs/strings.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- Strings</strong> are threads of posts tied to each other. There two types of strings:</p>
+                                    <p style="padding: 3px; font-size: 14px; color: grey; margin:0px;"><strong>- Private Strings: </strong> these are strings that you can create but can only include posts from friends that you or your friends personally tie. But can be seen by the public.</p>
+                                    <p style="padding: 3px; font-size: 14px; color: grey; margin:0px;"><strong>- Public Strings: </strong> These are strings that can contain all valid threads from all users that can be tied by a special keyword.</p>
+                                    <div style="width: 85%; margin:auto; margin-top: 5px;">
+                                        <img src="assets/imgs/tut.3.5.png" alt="" width="100%" height="100%" style="border-radius: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- Threads</strong> are posts tied to strings. These must contain pictures or a video, then a heading if necessary. <strong>Threads</strong> can be interacted with like <strong>Journals</strong>.</p>
+                                    <br>
+                                </span>
+                
+                                <!-- tutorial four: chats -->
+                                <span id="tut4" class="tuts" style="display: none;">
+                                    <br>
+                                    <div style="width: 60px; height: 60px; border-radius: 100%; margin: auto;">
+                                        <img src="assets/imgs/chat.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- Chat</strong> with your friends on <strong>vyral</strong> </p>
+                                    <div style="width: 60px; height: 60px; border-radius: 100%; margin: auto;">
+                                        <img src="assets/imgs/shared.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- Share</strong> pictures and files with your friends.</p>
+                                    <br>
+                                </span>
+                
+                                <!-- tutorial four: settings -->
+                                <span id="tut5" class="tuts" style="display: none;">
+                                    <br>
+                                    <div style="width: 60px; height: 60px; border-radius: 100%; margin: auto;">
+                                        <img src="assets/imgs/set.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"> You can edit your profile appearance and information and also change your username and other functionalities. </p>
+                                    <div style="width: 75%; height: 45px; margin:auto; margin-top: 5px;">
+                                        <img src="assets/imgs/tut5.5.png" alt="" width="100%" height="100%" style="border-radius: 5px;">
+                                    </div>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- Privacy:</strong> You can set your account to private which can avoid users whom you aren't following or whom aren't accepted to access your profile, posts and strings or threads.</p>
+                                    <p style="padding: 3px; font-size: 14.5px; color: grey; margin:0px;"><strong>- Mode:</strong> You can also switch your account from light to dark or vice-versa.</p>
+                                    <br>
+                                </span>
+                
+                            </div>
+                            <br>
+                            <div style="width: 100%; height: 60px;">
+                                <div style="height:50px; width:30%; float:left;">
+                                <img src="assets/imgs/backa.png" id="pre" alt="" width="15px" height="30px" style="margin: 10px; margin-top: 5px; float: left; cursor:pointer;">
+                                </div>
+                                <div style="height:50px; width:35%; float:left;">
+                                <p style="text-align: center;">
+                                    <button id="doneTut" class="btn btn-default btn-sm opn_log" style="margin:5px; border-radius: 15px; background-color:orange; color: white; border: none; display: none;"> done </button>
+                                </p>
+                                </div>
+                                <div style="height:50px; width:30%; float:right;">
+                                <img src="assets/imgs/backb.png" id="nex" alt="" width="15px" height="30px" style="margin: 10px; margin-top: 5px; float: right; cursor:pointer;">
+                                </div>
+                            </div>
+                            </div>
+                
+                        </div>
+
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!-- masthead -->
+        <div class="logo_blw_con" style="position: fixed; z-index: 3; bottom: 0; right: 0; height: 80px; width: 100%;">
+            <p style="margin:0px; padding: 5px; font-size: 25px; color: darkorange; font-weight: bold; text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3); text-align: center;"><strong style="font-weight: bold;">vyral</strong></p>
+            <p style="margin: 0px; padding: 1px; color: grey; font-size: 13px; text-align: center;">created by <span style="font-weight: normal;">Beam Wares</span></p>
+        </div>
+        <script>
+            function clsAlphaNoOnly (e) {  // Accept only alpha numerics, no special characters 
+                var regex = new RegExp("^[a-zA-Z0-9 ]+$");
+                var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+                if (regex.test(str)) {
+                    return true;
+                }
+            
+                e.preventDefault();
+                return false;
+            }
+            function clsAlphaNoOnly2 () {  // Accept only alpha numerics, no special characters 
+            return clsAlphaNoOnly (this.event); // window.event
+            }
+        </script>
+    </div>
+    <script>
+        const opnLog = () => {
+            var targetDate = new Date();
+            targetDate.setMilliseconds(targetDate.getMilliseconds() + 1);
+            var countDownDate = targetDate.getTime();
+            var x = setInterval(function() {
+                var now = new Date().getTime();
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                if (distance < 0) {
+                    $('.log_con').fadeIn();
+                    clearInterval(x);
+                }
+            }, 1000);
+        }
+        
+    </script>
+
+    <div class="container-fluid all_cons" id="container-ldr" style="display: none;">
+    </div>
+    <form action="/chats/shareImg" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="shareImgCht" accept="image/*" multiple>
+    </form>
+    <!-- forms -->
+    <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postImage" accept="image/*" multiple>
+    </form>
+    <form action="/video/videoUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postVideoJrnl" accept="video/*">
+    </form>
+    <!-- str/thr -->
+    <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postStrImage" accept="image/*" multiple>
+    </form>
+    <form action="/video/videoUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postVideoStr" accept="video/*">
+    </form>
+    <!-- edt thr -->
+    <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postEdtStrImage" accept="image/*" multiple>
+    </form>
+    <form action="/video/videoUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postVideo-add-thr" accept="video/*">
+    </form>
+    <!-- aut -->
+    <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postImageUAu" accept="image/*" multiple>
+    </form>
+    <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postImageUAuJ" accept="image/*" multiple>
+    </form>
+    <form action="/video/videoUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="postVideoUAuJ" accept="video/*">
+    </form>
+    <!-- change prof_pic -->
+    <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="profpicImageIn" accept="image/*">
+    </form>
+    <!-- aut back -->
+    <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="file" id="autBckImg" accept="image/*">
+    </form>
+    <span id="dropCons"></span>
+    <div class="container-fluid all_cons" id="container-body" style="display: none; height: 100%;">
+        <span id="fgspan"></span> 
+        <span id="drpHD"></span> 
+
+        <!-- left nav -->
+        <span id="drpLfn"></span>
+
+        <!-- drop BODIES -->
+        <div class="row" id="drpBds"></div>
+
+        <span id="drpBtm"></span> 
+        <div style="height: 900px; width: 100%;"></div>
+    </div>
+        
+  </body>
+  <script>
+      function clsAlphaNoOnly (e) {  // Accept only alpha numerics, no special characters 
+      var regex = new RegExp("^[a-zA-Z0-9 ]+$");
+      var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+      if (regex.test(str)) {
+          return true;
+      }
+      e.preventDefault();
+      return false;
+  }
+  function clsAlphaNoOnly2 () {  // Accept only alpha numerics, no special characters 
+      return clsAlphaNoOnly (this.event); // window.event
+  }
+  </script>
+    
+  
+  <!-- <script src="js/capacitor-welcome.js" type="module"></script> -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script async src="scripts/status.js" type="module"></script>
+  <script async src="scripts/global.js" type="module"></script>
+  <!-- <script async src="scripts/workers.js"></script> -->
+  <script async src="scripts/socket.js" type="module"></script>
+  <script async src="scripts/nav.js" type="module"></script>
+  <script async src="scripts/login.js" type="module"></script>
+  <script async src="scripts/fpass.js" type="module"></script>
+  <script async src="scripts/reg.js" type="module"></script>
+  <script async src="scripts/bodies.js" type="module"></script>
+  <script async src="scripts/loading.js" type="module"></script>
+  <script async src="scripts/alerts.js" type="module"></script>
+  <script async src="scripts/dark.js" type="module"></script>
+  <script async src="scripts/images.js" type="module"></script>
+  <script async src="scripts/imagesedt.js" type="module"></script>
+  <script async src="scripts/videoedit.js" type="module"></script>
+  <script async src="scripts/dataSelector.js" type="module"></script>
+  <script async src="scripts/profile.js" type="module"></script>
+  <script async src="scripts/engagement.js" type="module"></script>
+  <script async src="scripts/exuser.js" type="module"></script>
+  <script async src="scripts/info.js" type="module"></script>
+  <script async src="scripts/settings.js" type="module"></script>
+  <script async src="scripts/journals.js" type="module"></script>
+  <script async src="scripts/carties.js" type="module"></script>
+  <script async src="scripts/strings.js" type="module"></script>
+  <script async src="scripts/chats.js" type="module"></script>
+  <script async src="scripts/creator.js" type="module"></script>
+  <script async src="scripts/notify.js" type="module"></script>
+  <script async src="scripts/searcher.js" type="module"></script>
+  
+</html>
