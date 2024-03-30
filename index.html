@@ -63,11 +63,28 @@
         button, .btn {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #404040;
         }
+      @media only screen and (min-width: 610px) {
+        .container-fluid, #container-wlcm-logs {
+          display:none;
+        }
+        .big_v {
+          display:block;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .big_v {
+          display:none;
+        }
+      }
     </style>
   </head>
     
   <body id="Wholebody" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #404040;">
-        
+
+    <div class="big_v">
+      <p style="text-align:center; margin:10px; padding:5px; font-size:30px; font-weight:lighter; color:grey;">View On Mobile</p>
+    </div>
+    
     <div class="container-fluid" id="container-off">
         <div class="row" style="height:100%; position: fixed;"></div>
     </div>
